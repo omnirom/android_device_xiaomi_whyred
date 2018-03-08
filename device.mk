@@ -269,6 +269,7 @@ PRODUCT_PACKAGES += \
     init.qcom.wifi.sh \
     init.qti.fm.sh \
     init.qti.ims.sh \
+    init.goodix.sh \
     ueventd.rc
 
 PRODUCT_COPY_FILES += \
