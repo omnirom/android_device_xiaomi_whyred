@@ -38,7 +38,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # QCOM
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 BOARD_USES_QCOM_HARDWARE := true
+TARGET_USES_QCOM_BSP := false
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3
@@ -54,7 +56,6 @@ TARGET_KERNEL_CONFIG := whyred-perf_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_CLANG_COMPILE := true
 
-
 # Partitions
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -69,8 +70,10 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_USES_VENDORIMAGE := true
 TARGET_COPY_OUT_VENDOR := vendor
 
-#Exfat
-TARGET_EXFAT_DRIVER := sdfat
+# Audio/Media/Display
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8998
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8998
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8998
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
@@ -142,6 +145,7 @@ BOARD_BLUETOOTH_BDROID_HCILP_INCLUDED := false
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_USE_BTNV := true
+TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8998
 
 # Camera
 BOARD_QTI_CAMERA_32BIT_ONLY := true
@@ -161,6 +165,7 @@ TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 TARGET_USES_OVERLAY := true
 USE_OPENGL_RENDERER := true
+BOARD_USES_ADRENO := true
 
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
@@ -188,11 +193,11 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
+include vendor/omni/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # RIL
 PROTOBUF_SUPPORTED := true
-TARGET_RIL_VARIANT := caf
 
 # QCOM TIME SERVICES
 BOARD_USES_QC_TIME_SERVICES := true
@@ -200,6 +205,8 @@ BOARD_USES_QC_TIME_SERVICES := true
 #FM
 BOARD_HAVE_QCOM_FM := true
 BOARD_HAS_QCA_FM_SOC := "cherokee"
+BOARD_HAVE_FM_RADIO := true
+BOARD_DISABLE_FMRADIO_LIBJNI := true
 
 # GPS
 TARGET_NO_RPC := true
@@ -230,26 +237,12 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
-# Dex
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-    endif
-  endif
-endif
-
 # Recovery
 BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 BOARD_SUPPRESS_EMMC_WIPE := true
-
-# Bootanimation
-TARGET_BOOTANIMATION_PRELOAD := true
-TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 # Inherit from proprietary files
 include vendor/xiaomi/whyred/BoardConfigVendor.mk
