@@ -236,7 +236,6 @@ BOARD_USES_QCNE := true
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Recovery
 BOARD_HAS_NO_REAL_SDCARD := true
