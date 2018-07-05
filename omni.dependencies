@@ -70,5 +70,10 @@
     "repository": "android_hardware_qcom_fm",
     "target_path": "hardware/qcom/fm",
     "revision": "android-8.1"
-  }
+  },
+    "remote": "omnirom",
+    "repository": "android_external_json-c",
+    "target_path": "external/json-c",
+    "revision": "android-8.0"
+ }
 ]
