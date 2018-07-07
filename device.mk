@@ -284,7 +284,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    SnapdragonCamera2
 
 # IPv6
 PRODUCT_PACKAGES += \
