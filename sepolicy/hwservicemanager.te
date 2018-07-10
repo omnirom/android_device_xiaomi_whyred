@@ -1,0 +1,1 @@
+allow hwservicemanager init:dir { search read getattr };

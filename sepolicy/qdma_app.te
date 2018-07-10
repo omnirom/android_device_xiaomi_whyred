@@ -1,0 +1,1 @@
+allow qdma_app cache_file:dir { add_name create write };
