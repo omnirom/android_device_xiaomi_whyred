@@ -2,7 +2,7 @@
   {
     "remote": "omnirom",
     "repository": "android_kernel_xiaomi_sdm660",
-    "target_path": "kernel/xiaomi/sdm660"
+    "target_path": "kernel/xiaomi/sdm660",
     "revision": "android-8.1"
   },
   {
@@ -77,9 +77,10 @@
     "target_path": "hardware/qcom/fm",
     "revision": "android-8.1"
   },
+  {
     "remote": "omnirom",
     "repository": "android_external_json-c",
     "target_path": "external/json-c",
     "revision": "android-8.0"
- }
+  }
 ]
