@@ -45,7 +45,3 @@
 
 # dev
 /dev/snd/controlC0                                        u:object_r:audio_device:s0
-
-#
-/firmware(/.*)?          u:object_r:firmware_file:s0
-/bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
