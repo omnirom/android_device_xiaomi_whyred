@@ -1402,8 +1402,10 @@ bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfig.xml
 etc/wfdconfigsink.xml
+-framework/WfdCommon.jar
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib64/com.qualcomm.qti.wifidisplayhal@1.0.so
+lib/libOmxMux.so
 lib/libwfdavenhancements.so
 lib/libwfdcodecv4l2.so
 lib/libwfdcommonutils.so
@@ -1420,6 +1422,7 @@ lib/libwfduibcsink.so
 lib/libwfduibcsinkinterface.so
 lib/libwfduibcsrc.so
 lib/libwfduibcsrcinterface.so
+lib64/libOmxMux.so
 lib64/libwfdavenhancements.so
 lib64/libwfdcodecv4l2.so
 lib64/libwfdcommonutils.so
