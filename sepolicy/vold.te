@@ -1,1 +1,1 @@
-allow vold persist_file:dir { open read };
+allow vold persist_file:dir { open read ioctl };

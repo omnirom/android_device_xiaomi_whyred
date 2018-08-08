@@ -45,3 +45,10 @@
 
 # dev
 /dev/snd/controlC0                                        u:object_r:audio_device:s0
+
+# firmware
+/firmware(/.*)?                                           u:object_r:firmware_file:s0
+/bt_firmware(/.*)?                                        u:object_r:bt_firmware_file:s0
+
+# wdf
+/vendor/lib64/libmmrtpencoder.so                          u:object_r:vendor_file:s0
