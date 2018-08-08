@@ -280,8 +280,8 @@ PRODUCT_PACKAGES += \
     rcs_service_api.xml
 
 # Camera
-PRODUCT_PACKAGES += \
-    SnapdragonCamera2
+#PRODUCT_PACKAGES += \
+#    SnapdragonCamera2
 
 # IPv6
 PRODUCT_PACKAGES += \
