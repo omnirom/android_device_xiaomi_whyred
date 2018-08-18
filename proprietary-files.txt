@@ -1915,6 +1915,11 @@ vendor/lib/libvidhance.so
 vendor/lib/libmmlib2d_interface.so
 vendor/lib/libmorphohht4.0.so
 
+# Addition libraries for camera for Pie
+lib/libskia.so
+lib/libicuuc.so:lib/libicuuc-v27.so
+lib/libminikin.so:lib/libminikin-v27.so
+
 # Consumerir
 vendor/lib/hw/consumerir.default.so
 vendor/lib64/hw/consumerir.default.so
