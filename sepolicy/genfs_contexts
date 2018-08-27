@@ -2,5 +2,3 @@ genfscon debugfs /rpm_stats                           u:object_r:debugfs_rpm:s0
 genfscon debugfs /rpm_master_stats                    u:object_r:debugfs_rpm:s0
 genfscon debugfs /system_stats                        u:object_r:debugfs_rpm:s0
 genfscon debugfs /wlan0/power_stats                   u:object_r:debugfs_rpm:s0
-genfscon proc /vmstat                                 u:object_r:proc:s0
-genfscon proc /version                                u:object_r:proc:s0
