@@ -71,7 +71,6 @@ vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libqomx_core.so
 vendor/lib/lib_lowlight.so
-vendor/lib/libarcsoft_beauty_shot.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libchromaflash.so
 vendor/lib/libFaceGrade.so
@@ -158,13 +157,10 @@ vendor/firmware/cpp_firmware_v1_5_0.fw
 vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
-vendor/lib/libarcsoft_portrait_editing.so
 vendor/lib/libcamera_scene.so
-vendor/lib/libfit_face_beauty.so
 vendor/lib/libgnustl_shared.so
 lib64/libgnustl_shared.so
 vendor/lib/libSNPE.so
-lib64/libSNPE.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
 vendor/lib/libVDClearShot.so
@@ -294,6 +290,7 @@ vendor/bin/xtra-daemon
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qualcomm.location.xml
 etc/permissions/izat.xt.srv.xml
+etc/permissions/privapp-permissions-com.qualcomm.location.xml
 vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
 framework/com.qti.location.sdk.jar
@@ -387,8 +384,8 @@ vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
-etc/permissions/com.qualcomm.qti.imscmservice.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice.xml|224f091964d59a33c82eab55cb1612cfdee99d25
-etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml|dcdd5e8236d433c2810cea30241423906e697782
+etc/permissions/com.qualcomm.qti.imscmservice.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice.xml
+etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml
 etc/permissions/qti-vzw-ims-internal.xml:vendor/etc/permissions/qti-vzw-ims-internal.xml
 framework/com.qualcomm.qti.imscmservice@1.0-java.jar:vendor/framework/com.qualcomm.qti.imscmservice@1.0-java.jar
 framework/com.qualcomm.qti.imscmservice@1.1-java.jar:vendor/framework/com.qualcomm.qti.imscmservice@1.1-java.jar
@@ -408,8 +405,8 @@ vendor/lib64/lib-rtpcommon.so
 vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib64/lib-rtpsl.so
--app/ims/ims.apk:vendor/app/ims/ims.apk|3e4ef63b336099e172202ea8f7a19151e44cc4e8
--app/imssettings/imssettings.apk:vendor/app/imssettings/imssettings.apk|8a453ddf6adeb13d291f19bf09567207a267754b
+-app/ims/ims.apk:vendor/app/ims/ims.apk
+-app/imssettings/imssettings.apk:vendor/app/imssettings/imssettings.apk
 lib64/lib-imscamera.so:vendor/lib64/lib-imscamera.so
 lib64/lib-imsvideocodec.so:vendor/lib64/lib-imsvideocodec.so
 lib64/lib-imsvt.so:vendor/lib64/lib-imsvt.so
@@ -1080,7 +1077,6 @@ vendor/lib/liblowi_wifihal.so
 vendor/lib/liblqe.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libmfido.so
-vendor/lib/libmicamera.ic.so
 vendor/lib/libmlipay.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmm-disp-apis.so
@@ -1099,7 +1095,6 @@ vendor/lib/libmmsw_platform.so
 vendor/lib/libmt.so
 vendor/lib/libnetmgr.so
 vendor/lib/libois_bu63165.so
-vendor/lib/libois_lc898122.so
 vendor/lib/libpdmapper.so
 vendor/lib/libpdnotifier.so
 vendor/lib/libperfgluelayer.so
