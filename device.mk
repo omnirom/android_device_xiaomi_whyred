@@ -254,18 +254,14 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.msm.usb.configfs.rc \
     init.target.rc \
-    init.crda.sh \
-    init.mdm.sh \
-    init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
     init.qcom.usb.sh \
-    init.qti.fm.sh \
     init.goodix.sh \
     ueventd.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/bin/init.qti.qseecomd.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qseecomd.sh \
-    $(LOCAL_PATH)/rootdir/etc/init.qcom.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.post_boot.sh
+    $(LOCAL_PATH)/rootdir/bin/init.qti.qseecomd.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qseecomd.sh
 
 # RCS
 PRODUCT_PACKAGES += \

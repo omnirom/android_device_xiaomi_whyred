@@ -21,17 +21,17 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.class_main.sh
 LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.class_main.sh
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := bin/init.class_main.sh
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.qcom.sh
 LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.sh
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := bin/init.qcom.sh
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -67,73 +67,33 @@ LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := init.crda.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.crda.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.mdm.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.mdm.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE       := init.qcom.early_boot.sh
 LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.early_boot.sh
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := bin/init.qcom.early_boot.sh
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.efs.sync.sh
+LOCAL_MODULE       := init.qcom.post_boot.sh
 LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.efs.sync.sh
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := bin/init.qcom.post_boot.sh
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.qcom.usb.sh
 LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.usb.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.wifi.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.wifi.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.fm.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.fm.sh
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.ims.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := root/init.qcom.ims.sh
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := bin/init.qcom.usb.sh
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.goodix.sh
 LOCAL_MODULE_TAGS  := optional eng
 LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := init.goodix.sh
+LOCAL_SRC_FILES    := bin/init.goodix.sh
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
