@@ -3,31 +3,25 @@
     "remote": "omnirom",
     "repository": "android_kernel_xiaomi_sdm660",
     "target_path": "kernel/xiaomi/sdm660",
-    "revision": "android-8.1"
-  },
-  {
-    "remote": "omnirom",
-    "repository": "android_packages_apps_FMRadio",
-    "target_path": "packages/apps/FMRadio",
-    "revision": "android-8.0"
+    "revision": "android-9.0"
   },
   {
     "remote": "omnirom",
     "repository": "android_packages_apps_SnapdragonCamera2",
     "target_path": "packages/apps/SnapdragonCamera2",
-    "revision": "android-8.1"
+    "revision": "android-9.0"
   },
   {
     "remote": "omnirom",
     "repository": "android_device_qcom_caf-sepolicy",
     "target_path": "device/qcom/sepolicy",
-    "revision": "android-8.1"
+    "revision": "android-9.0"
   },
   {
     "remote": "omnirom",
     "repository": "vendor_qcom_opensource_dataservices",
     "target_path": "vendor/qcom/opensource/dataservices",
-    "revision": "android-8.1"
+    "revision": "android-9.0"
   },
   {
     "remote": "omnirom",
@@ -51,36 +45,30 @@
     "remote": "omnirom",
     "repository": "android_hardware_qcom_audio-caf-msm8998",
     "target_path": "hardware/qcom/audio-caf-msm8998",
-    "revision": "android-8.1"
+    "revision": "android-9.0"
   },
   {
     "remote": "omnirom",
     "repository": "android_hardware_qcom_display-caf-msm8998",
     "target_path": "hardware/qcom/display-caf-msm8998",
-    "revision": "android-8.1"
+    "revision": "android-9.0"
   },
   {
     "remote": "omnirom",
     "repository": "android_hardware_qcom_media-caf-msm8998",
     "target_path": "hardware/qcom/media-caf-msm8998",
-    "revision": "android-8.1"
+    "revision": "android-9.0"
   },
   {
     "remote": "omnirom",
     "repository": "android_vendor_qcom_opensource_interfaces",
     "target_path": "vendor/qcom/opensource/interfaces",
-    "revision": "android-8.1"
-  },
-  {
-    "remote": "omnirom",
-    "repository": "android_hardware_qcom_fm",
-    "target_path": "hardware/qcom/fm",
-    "revision": "android-8.1"
+    "revision": "android-9.0"
   },
   {
     "remote": "omnirom",
     "repository": "android_external_json-c",
     "target_path": "external/json-c",
-    "revision": "android-8.0"
+    "revision": "android-9.0"
   }
 ]
