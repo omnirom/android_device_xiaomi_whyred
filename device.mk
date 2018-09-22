@@ -196,15 +196,7 @@ PRODUCT_BOOT_JARS += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.sdm660 \
-    libcurl \
     libgnsspps \
-    libvehiclenetwork-native \
-    libloc_core \
-    libloc_ds_api \
-    libloc_stub \
-    liblocation_api \
-    libgps.utils \
     libgnss
 
 PRODUCT_COPY_FILES += \
