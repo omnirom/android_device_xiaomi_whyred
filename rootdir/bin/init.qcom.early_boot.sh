@@ -461,6 +461,7 @@ then
         cat $file | while read line; do
           case "$line" in
                     *"ubwc"*)
+                    setprop vendor.gralloc.enable_fb_ubwc 1
                     setprop debug.gralloc.enable_fb_ubwc 1
                     setprop debug.gralloc.gfx_ubwc_disable 0
                 esac
