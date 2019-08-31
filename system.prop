@@ -1,4 +1,4 @@
-#
+#1.999.1.2.333
 # system.prop for sdm660
 #
 
@@ -45,8 +45,6 @@ vendor.display.enable_default_color_mode=1
 # Display Properties as per treble compliance
 vendor.gralloc.enable_fb_ubwc=1
 vendor.display.disable_skip_validate=1
-
-debug.sf.disable_backpressure
 
 #ro.hdmi.enable=true
 #
